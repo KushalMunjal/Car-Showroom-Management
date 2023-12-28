@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title></title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+
+	<div class="header">
+		<div class="wrap">
+			<div class="header-bot">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="" style="width:450px; height: 160px;"></a>
+				</div>
+
+
+				<div class="cart">
+
+
+					<div class="menu-main">
+
+						<ul class="dc_css3_menu">
+							<li><a href="index.php">Home</a></li>
+							<li><a href="aboutus.html">About</a></li>
+							<li><a href="services.php">Brands</a></li>
+							<li><a href="contact.php">Contact</a></li>
+							<li><a href="login.php">Login</a></li>
+							<li><a href="register.php">Signup</a></li>
+							<li class = "active"><a href="inquiry.html">Inquiry</a></li>
+
+						</ul>
+
+						<div class="clear"></div>
+					</div>
+
+				</div>
+                <div class="clear"></div>
+			</div>
+		</div>
+	</div>
+
+	<h1>Customer Vehicle Information Inquiry Form</h1>
+	<form action="submit.php" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required><br>
+
+		<label for="address">Address:</label>
+		<input type="text" id="address" name="address" required><br>
+
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" name="phone" required><br>
+
+		<label for="email">Email Address:</label>
+		<input type="email" id="email" name="email" required><br>
+
+		<label for="make">Vehicle Make:</label>
+		<input type="text" id="make" name="make" required><br>
+
+		<label for="model">Vehicle Model:</label>
+		<input type="text" id="model" name="model" required><br>
+
+		<label for="year">Year:</label>
+		<input type="text" id="year" name="year" required><br>
+
+		<label for="license_plate">License Plate Number:</label>
+		<input type="text" id="license_plate" name="license_plate" required><br>
+
+		<label for="vin">VIN Number:</label>
+		<input type="text" id="vin" name="vin" required><br>
+
+		<p>What type of information are you seeking about the vehicle? (Please check all that apply)</p>
+
+		<input type="checkbox" id="service_history" name="information[]" value="service_history">
+		<label for="service_history">Service History</label><br>
+
+		<input type="checkbox" id="accident_history" name="information[]" value="accident_history">
+		<label for="accident_history">Accident History</label><br>
+
+		<input type="checkbox" id="warranty_information" name="information[]" value="warranty_information">
+		<label for="warranty_information">Warranty Information</label><br>
+
+		<input type="checkbox" id="technical_specifications" name="information[]" value="technical_specifications">
+		<label for="technical_specifications">Technical Specifications</label><br>
+
+		<label for="other">Other:</label>
+		<input type="text" id="other" name="other"><br>
+
+		<label for="additional_details">Please provide any additional details or questions about the vehicle you would like us to address:</label><br>
+		<textarea id="additional_details" name="additional_details"></textarea><br>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
